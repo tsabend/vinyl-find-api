@@ -42,7 +42,7 @@ class AlbumSearchController < ApplicationController
       "thumb": thumb,
       "spotify_id": spotify_album_id,
       "song_previews": song_previews,
-      "price": price.to_s # easier to deal with type conversions on the other side
+      "price": price
     }
     p album_object
     # format html =>
