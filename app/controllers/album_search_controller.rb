@@ -8,7 +8,7 @@ class AlbumSearchController < ApplicationController
   def find
     if params[:file]
       image_file = params[:file].tempfile
-      image_name = SecureRandom.uuid ".jpeg"
+      image_name = SecureRandom.uuid + ".jpeg"
       # Upload image
       $s3.objects.create(image_name, image_file)
       # # Run search
