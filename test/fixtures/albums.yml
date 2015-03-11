@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  artist: MyString
+  year: MyString
+  thumb: MyString
+  price: 1
+  condition: MyString
+
+two:
+  title: MyString
+  artist: MyString
+  year: MyString
+  thumb: MyString
+  price: 1
+  condition: MyString

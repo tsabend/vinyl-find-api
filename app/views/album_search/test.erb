@@ -1,0 +1,7 @@
+<h1>Vinyl-Find</h1>
+<h3>Find your album info</h3>
+
+<%= form_tag({action: :find}, multipart: true) do %>
+  <%= file_field_tag 'file' %>
+  <%= submit_tag 'Submit'%>
+<% end %>

@@ -1,0 +1,20 @@
+<h1>Your album info:</h1>
+
+<h2><%= @album.title %></h2>
+<img src="<%= @album.thumb %>">
+<h5><%= @album.year %></h5>
+
+<ul>
+  <% @album.format.each do |format| %>
+    <li><%= format %></li>
+  <% end %>
+</ul>
+
+
+<ul>
+  <% @album.label.each do |label| %>
+    <li><%= label %></li>
+  <% end %>
+</ul>
+
+<iframe src="https://embed.spotify.com/?uri=<%= @spotify_uri %>" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
