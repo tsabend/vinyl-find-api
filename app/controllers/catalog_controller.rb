@@ -5,10 +5,8 @@ class CatalogController < ApplicationController
   end
 
   def create
-    byebug
-    p "HERE!"
     Album.create(album_params)
-    "Success"
+    render json: {message: "success"}
   end
 
   private

@@ -13,7 +13,7 @@ class DiscogsMarketplace
     sum = listings.reduce(Money.new(0, "USD")) do |sum, listing|
       sum + Money.new(string_to_money(listing[:price]), listing[:currency]).as_us_dollar
     end
-    (sum.cents / listings.size) / 100.0
+    ((sum.cents / listings.size) / 100.0).to_s
   end
 
   def self.string_to_money(str)

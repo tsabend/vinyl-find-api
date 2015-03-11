@@ -6,7 +6,7 @@ class CreateAlbums < ActiveRecord::Migration
       t.string :release_date
       t.string :thumb
       t.string :spotify_id
-      t.integer :price
+      t.string :price
       t.string :condition
 
       t.timestamps null: false

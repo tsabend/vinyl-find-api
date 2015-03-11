@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150309194510) do
     t.string   "release_date"
     t.string   "thumb"
     t.string   "spotify_id"
-    t.integer  "price"
+    t.string   "price"
     t.string   "condition"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
